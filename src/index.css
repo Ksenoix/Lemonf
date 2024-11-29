@@ -1,0 +1,62 @@
+body {
+  background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.App {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  border: 2px solid #fff;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.85); /* Darker background */
+  color: white;
+  height: 80vh;
+  width: 80vw;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8); /* Deeper shadow */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(12px); /* Stronger blur for a glass effect */
+}
+
+.background-color-zadnica-gitler {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  height: 70vh;
+  width: 70vw;
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly dark background */
+  color: white;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  backdrop-filter: blur(8px); /* Glass effect */
+}
+
+h1, p {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Soft shadow for better readability */
+}
